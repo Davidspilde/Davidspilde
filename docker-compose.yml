@@ -1,0 +1,25 @@
+services:
+  frontend:
+    build:
+      context: frontend/
+      dockerfile: Dockerfile
+    restart: always
+    networks:
+      - app_network
+    
+  nginx:
+    build:
+      context: nginx/
+      dockerfile: Dockerfile
+    ports:
+      - "443:443"
+    restart: always
+    networks:
+      - app_network
+    depends_on:
+      - frontend
+
+networks:
+  app_network:
+    driver: bridge
+    
