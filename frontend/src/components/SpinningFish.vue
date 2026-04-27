@@ -1,27 +1,19 @@
 <template>
-    <div class="container">
+    <div>
       <img
         class="fish"
-        src="https://media1.tenor.com/m/R5IECfIf34YAAAAd/fish-spinning.gif"
+        src="https://c.tenor.com/R5IECfIf34YAAAAd/tenor.gif"
         alt="spinning fish"
       />
+      <h2>Work in progress👷</h2>
     </div>
   </template>
   
   <script setup>
   </script>
-  
   <style scoped>
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #000;
-  }
-  
   .fish {
-    width: 300px;
-    height: auto;
+    width: 100%;
+    height: 100%;
   }
   </style>
