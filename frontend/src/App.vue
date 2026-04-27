@@ -1,7 +1,7 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import SpinningFish from './components/SpinningFish.vue';
 </script>
 
 <template>
-  <HelloWorld />
+  <SpinningFish />
 </template>
